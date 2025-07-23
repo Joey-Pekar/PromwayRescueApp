@@ -35,7 +35,7 @@ function App() {
         <header class="my-2 w-full">
           <div class="mw-1/2 d:w-1/3 max-w-100 mx-auto">
             <img src={logo} />
-            <h1 class="font-merienda text-primary text-shadow-xs text-shadow-gray-800 font-bold text-1xl md:text-2xl lg:text-4xl">
+            <h1 class="font-merienda text-primary text-shadow-xs text-shadow-gray-800 font-bold text-2xl lg:text-4xl">
               Promway Rescue
             </h1>
           </div>
@@ -76,20 +76,20 @@ function App() {
             Available Dogs
           </h1>
           {loading ? (
-            <h1 class="text-warning text-2xl animate-bounce">Loading...</h1>
+            <h1 class="text-success text-2xl animate-bounce">Loading...</h1>
           ) : (
             <div className="mt-4 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
               {data.map((animal) => (
                 <a
                   key={animal.id}
                   href={animal.url}
-                  class="group relative border border-gray-200 rounded-t-md shadow-xl bg-gray-100"
+                  class="group relative border border-gray-200 rounded-t-md shadow-xl bg-card"
                 >
                   {animal.photos.length > 0 && (
                     <img
                       src={animal.photos[0].full}
                       alt={animal.name}
-                      className="aspect-square w-full shadow-md rounded-t-xs bg-blue-500 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+                      className="aspect-square w-full shadow-md rounded-t-xs bg-blue-500 object-cover inset-shadow-lg group-hover:opacity-75 lg:aspect-auto lg:h-80"
                     />
                   )}
                   <div class="p-2">
@@ -106,7 +106,7 @@ function App() {
           )}
         </div>
       </div>
-      <footer class="fixed bottom-0 left-0 z-20 w-full shadow bg-dark">
+      <footer class="fixed bottom-0 left-0 z-20 w-full bg-dark inset-shadow-2xl">
         <div class="w-full max-w-screen-xl p-4 mx-auto flex md:items-center justify-between">
           <span class="text-sm text-white sm:text-center">
             &copy; {new Date().getFullYear()} Promway Rescue
