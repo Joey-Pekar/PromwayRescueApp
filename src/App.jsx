@@ -59,6 +59,15 @@ function App() {
             Kennels, we are now happy to be an official rescue so that we can do
             even more to help more dogs in Stark County.
           </p>
+          <p class="pb-2">
+            Our adoption process is simple and straightforward. We want to
+            ensure that our dogs go to the best homes possible. We do this by
+            starting with a meet and greet, proceding with an application
+            process, having a second meet and greet with any other dogs if
+            applicable, and finally our board will review the application and
+            make a decision. We want to ensure that our dogs go to the best
+            homes possible.
+          </p>
         </div>
 
         <hr className="my-8" />
