@@ -33,15 +33,20 @@ function App() {
     <>
       <div class="bg-light">
         <header class="my-2 w-full">
-          <div class="w-1/3 max-w-100 mx-auto">
+          <div class="mw-1/2 d:w-1/3 max-w-100 mx-auto">
             <img src={logo} />
-            <h1 class="font-merienda text-primary font-bold text-1xl md:text-2xl lg:text-4xl">
+            <h1 class="font-merienda text-primary text-shadow-xs text-shadow-gray-800 font-bold text-1xl md:text-2xl lg:text-4xl">
               Promway Rescue
             </h1>
           </div>
         </header>
 
+        <hr className="my-8" />
+
         <div class="max-w-6xl px-4 mx-auto text-center mt-8">
+          <h1 className="font-merienda text-2xl font-bold mb-4 text-primary">
+            About Us
+          </h1>
           <p class="pb-2">
             Promway Rescue, Inc exists to provide shelter and one-on-one
             specialized care for in-need companion animals from local animal
@@ -56,8 +61,9 @@ function App() {
           </p>
         </div>
 
+        <hr className="my-8" />
         <div className="mx-auto max-w-2xl px-4 pt-2 pb-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h1 className="font-merienda text-2xl font-bold mb-4">
+          <h1 className="font-merienda text-2xl font-bold mb-4 text-primary">
             Available Dogs
           </h1>
           {loading ? (
@@ -68,21 +74,23 @@ function App() {
                 <a
                   key={animal.id}
                   href={animal.url}
-                  class="group relative border border-gray-200 rounded-t-md shadow-lg"
+                  class="group relative border border-gray-200 rounded-t-md shadow-xl bg-gray-100"
                 >
                   {animal.photos.length > 0 && (
                     <img
                       src={animal.photos[0].full}
                       alt={animal.name}
-                      className="aspect-square w-full shadow-md rounded-t-xs bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+                      className="aspect-square w-full shadow-md rounded-t-xs bg-blue-500 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
                     />
                   )}
-                  <h3 class="font-merienda text-primary text-xl mt-2">
-                    {animal.name}
-                  </h3>
-                  <p class="text-lg text-gray-900">
-                    {animal.age} {animal.breeds.primary}
-                  </p>
+                  <div class="p-2">
+                    <h3 class="font-merienda text-primary text-xl mt-2">
+                      {animal.name}
+                    </h3>
+                    <p class="text-lg text-gray-900">
+                      {animal.age} {animal.breeds.primary}
+                    </p>
+                  </div>
                 </a>
               ))}
             </div>
@@ -99,7 +107,10 @@ function App() {
               <FaPhone />
               &nbsp;(330) 494-8100
             </a>
-            <a href="https://www.facebook.com/PromwayRescue/" class="flex items-center">
+            <a
+              href="https://www.facebook.com/PromwayRescue/"
+              class="flex items-center"
+            >
               <FaFacebook />
               &nbsp;Promway Rescue
             </a>
