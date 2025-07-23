@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #0A2472;
+  --color-secondary: #58A7B8; 
+  --color-light: #F1E9EE;
+  --color-dark: #282737;
+  
+  --color-success: #408B62;
+  --color-warning: #BE7B2A;
+  --color-danger: #F44336;
+
+  --font-merienda: 'Merienda', cursive;
+}
