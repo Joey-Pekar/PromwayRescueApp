@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Client } from "@petfinder/petfinder-js";
 import "./App.css";
 
