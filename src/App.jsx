@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <div class="bg-light">
+      <div class="">
         <header class="my-2 w-full">
           <div class="mw-1/2 d:w-1/3 max-w-100 mx-auto">
             <img src={logo} />
@@ -39,9 +39,11 @@ function App() {
               Promway Rescue
             </h1>
           </div>
+
+          <hr className="my-8" />
         </header>
 
-        <hr className="my-8" />
+        
 
         <div class="max-w-6xl px-4 mx-auto text-center mt-8">
           <h1 className="font-merienda text-2xl font-bold mb-4 text-primary">
