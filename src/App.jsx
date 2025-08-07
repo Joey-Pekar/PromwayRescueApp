@@ -31,10 +31,9 @@ function App() {
 
   return (
     <>
-      <div class="">
         <header class="my-2 w-full">
           <div class="mw-1/2 d:w-1/3 max-w-100 mx-auto">
-            <img src={logo} />
+            <img src={logo} alt="Logo"/>
             <h1 class="font-merienda text-primary text-shadow-xs text-shadow-gray-800 font-bold text-2xl lg:text-4xl">
               Promway Rescue
             </h1>
@@ -44,7 +43,7 @@ function App() {
         </header>
 
         
-
+        <main>
         <div class="max-w-6xl px-4 mx-auto text-center mt-8">
           <h1 className="font-merienda text-2xl font-bold mb-4 text-primary">
             About Us
@@ -95,9 +94,9 @@ function App() {
                     />
                   )}
                   <div class="p-2">
-                    <h3 class="font-merienda text-primary text-xl mt-2">
+                    <h2 class="font-merienda text-primary text-xl mt-2">
                       {animal.name}
-                    </h3>
+                    </h2>
                     <p class="text-lg text-gray-900">
                       {animal.age} {animal.breeds.primary}
                     </p>
@@ -107,7 +106,8 @@ function App() {
             </div>
           )}
         </div>
-      </div>
+
+      </main>
       <footer class="fixed bottom-0 left-0 z-20 w-full bg-dark inset-shadow-2xl">
         <div class="w-full max-w-screen-xl p-4 mx-auto flex md:items-center justify-between">
           <span class="text-sm text-white sm:text-center">
