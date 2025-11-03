@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Client } from "@petfinder/petfinder-js";
 import "./App.css";
+import Snowfall from 'react-snowfall';
 
 import { FaPhone, FaFacebook } from "react-icons/fa";
 import logo from "./assets/logo.svg";
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <>
+      <Snowfall radius={[1.2, 5.0]} color="#DDEDED"/>
         <header class="my-2 w-full">
           <div class="mw-1/2 d:w-1/3 max-w-100 mx-auto">
             <img src={logo} alt="Logo"/>
